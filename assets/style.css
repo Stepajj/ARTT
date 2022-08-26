@@ -90,15 +90,30 @@ body{
     background: #1E0028;
   }
 
+  .header{
+    padding: 50px 10px 0px 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
   .footer{
    
     
     padding: 143px 20px 10px 20px;
     color: #fff;
     background: #1E0028;
+    
   }
 
+ 
+
   .footer-content{
+    display: flex;
+    
+  }
+
+  .nav-content{
     display: flex;
     
   }
@@ -301,10 +316,14 @@ body{
   }
   
   .notebook{
+    width: 380px;
+    height: 580px;
     position: absolute;
-   top: 0;
-   right: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
    
+    
   }
 
   @media (max-width:1300px) {
@@ -668,7 +687,7 @@ height: 615px;
 .share__reach-content__items{
   display: flex;
   flex-direction: column;
-  margin-top: 125px;
+  margin-top: 35px;
 }
 
 .share__reach-content__item{
@@ -700,8 +719,8 @@ height: 615px;
 
 
 .coins__img{
-  width:50%;
-  height: 35%;
+  width:500px;
+  
   margin-top: 50px;
   position: absolute;
 }
@@ -860,6 +879,12 @@ height: 615px;
   margin-right: 10px;
 }
 
+.soc-link__icon img{
+  width: 88px;
+  height: 88px;
+  margin-right: 10px;
+}
+
 .hand__img{
   position: absolute;
  
@@ -874,28 +899,32 @@ height: 615px;
   }
 }
 
-.footer__nav{
+.nav__nav{
   display: flex;
   margin-left: auto;
   
 }
 
-.footer__nav-item:not(:last-child){
+.nav__nav-item:not(:last-child){
   margin-right: 15px;
 }
 
-.footer__nav-item a{
+.nav__nav-item a{
   color: #707070;
 }
 
-.footer-title{
+.head_item a{
+  color: #fff;
+}
+
+.nav-title{
   font-weight: 800;
   font-size: 24.2464px;
   line-height: 36px;
   color: #FFFFFF;
 }
 
-.footer__gmail{
+.nav__gmail{
   font-weight: 400;
   font-size: 15.587px;
   line-height: 23px;
@@ -910,7 +939,7 @@ height: 615px;
 /*------------------- ABOUT US ---------------------*/
 
 .our-mission__container{
-  padding: 130px 20px 0px 20px;
+  padding: 250px 20px 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1030,4 +1059,108 @@ font-size: 112.564px;
 
 .footer__about{
   padding-top: 42px;
+}
+
+/*--------------BUY NOW-------------------------*/
+
+.choose__block{
+  padding-top: 100px;
+  color: #fff;
+}
+
+.bg-cirle{
+  position: absolute;
+  z-index: 0;
+  width: 670px;
+  height:670px;
+  background: linear-gradient(180deg, #1EFFF2 0%, #AE009D 100%);
+  filter: blur(313px);
+  margin-top: -300px;
+}
+
+.z-for__circle{
+  z-index: 1;
+}
+
+.choose__titlse{
+  position: relative;
+  z-index: 100;
+  display: flex;
+  margin: 123px 0px 0px 0px;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+
+}
+
+.choose__subtitle{
+  font-weight: 600;
+  font-size: 81.7949px;
+  line-height: 131px;
+  
+}
+
+.choose__subtitle_two{
+  font-weight: 500;
+  font-size: 36.5986px;
+  line-height: 55px;
+}
+
+.choose__items{
+  display: flex;
+  margin: 70px 0px 0px 0px;
+  justify-content: space-between;
+}
+
+.choose__item{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose__item-title{
+  margin: 30px 0px 0px 0px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 33px;
+}
+
+.choose__item-text{
+  margin: 20px 0px 0px 0px;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 33px;
+}
+
+.token__block{
+  margin: 100px 0px 0px 0px;
+  width: 100%;
+  height: 238px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(264.22deg, #954EEF 25.27%, #8729BB 84.58%);
+  box-shadow: 0px 43px 99px rgba(0, 0, 0, 0.25);
+  
+}
+
+.tocen__title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.tocen__item{
+  margin: 23px 0px 0px 0px;
+  padding: 16px 45px;
+  background: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #424242;
 }
