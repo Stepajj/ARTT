@@ -95,15 +95,20 @@ body{
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 10;
   }
 
   .footer{
    
     
-    padding: 143px 20px 10px 20px;
+    padding: 130px 20px 10px 20px;
     color: #fff;
     background: #1E0028;
     
+  }
+
+  .nav__main__item{
+    margin-top: -15px;
   }
 
  
@@ -219,9 +224,10 @@ body{
   }
 
   .main__title{
+    margin-top: 20px;
     font-weight: 700;
     font-size: 99.0187px;
-    line-height: 173px;
+    line-height: 123px;
   }
 
 
@@ -316,7 +322,7 @@ body{
   }
   
   .notebook{
-    width: 380px;
+    width: 440px;
     height: 580px;
     position: absolute;
     top: 0;
@@ -326,7 +332,7 @@ body{
     
   }
 
-  @media (max-width:1300px) {
+  @media (max-width:1500px) {
     .notebook{
         display: none;
        
@@ -483,7 +489,7 @@ body{
 .your-content__title{
   font-weight: 600;
   font-size: 141.829px;
-  line-height: 212px;
+  line-height: 182px;
 }
 
 .your-content__subtitle{
@@ -497,7 +503,7 @@ body{
   justify-content: space-between;
 }
 .big__o{
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 @media (max-width: 1000px) {
@@ -565,6 +571,10 @@ body{
   justify-content: center;
 }
 
+.shape-icon img{
+  margin-top: -50px;
+}
+
 .share-title{
   font-weight: 600;
   font-size: 75px;
@@ -579,7 +589,7 @@ body{
 }
 
 .share__duble-blocks{
-  margin: 142px 0px 0px 0px;
+  margin: 100px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -587,8 +597,8 @@ body{
   min-height: 436px;
   display: flex;
   flex-direction: column;
-  margin: 7px;
-  flex: 1;
+  margin-bottom: 10px;
+  width: 49.5%;
   position: relative;
   padding: 21px 0px 0px 24px;
   background: linear-gradient(180deg, #5F0077 0%, #000816 100%);
@@ -608,7 +618,7 @@ body{
   margin: 30px 0px 0px 12px;
   font-weight: 600;
   font-size: 46.58px;
-  line-height: 67px;
+  line-height: 55px;
 }
 
 .duble-block__titels{
@@ -621,10 +631,14 @@ body{
   margin-left: 50px;
 }
 
+.coins__title{
+  line-height: 55px;
+}
+
 .share__reach{
   display: flex;
   width: 100%;
-  min-height: 436px;
+  min-height: 396px;
   background: linear-gradient(180deg, #6B00D6 0%, #330045 100%);
   border-radius: 27px;
   padding: 23px;
@@ -646,6 +660,7 @@ height: 615px;
   }
 
   .share__duble-blocks{
+    
    flex-direction: column;
   }
 
@@ -674,6 +689,10 @@ height: 615px;
     font-size: 15px;
   }
   
+  .share__duble-block{
+    width: 100%;
+
+  }
 
 }
 
@@ -687,7 +706,7 @@ height: 615px;
 .share__reach-content__items{
   display: flex;
   flex-direction: column;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 .share__reach-content__item{
@@ -720,8 +739,7 @@ height: 615px;
 
 .coins__img{
   width:500px;
-  
-  margin-top: 50px;
+  margin-top: 0px;
   position: absolute;
 }
 
@@ -882,7 +900,7 @@ height: 615px;
 .soc-link__icon img{
   width: 88px;
   height: 88px;
-  margin-right: 10px;
+  margin-right: 0px;
 }
 
 .hand__img{
@@ -939,7 +957,7 @@ height: 615px;
 /*------------------- ABOUT US ---------------------*/
 
 .our-mission__container{
-  padding: 250px 20px 0px 20px;
+  padding: 202px 20px 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -949,7 +967,7 @@ height: 615px;
 }
 
 .about-us__block-aboutpage__container{
-  padding: 130px 0px 0px 0px;
+  padding: 70px 0px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -960,7 +978,7 @@ height: 615px;
 
 .about-us__block-aboutpage{
   color: #fff;
-  padding: 120px 0px 100px 0px;
+  padding: 0px 0px 100px 0px;
  
 }
 
@@ -993,7 +1011,7 @@ height: 615px;
 }
 
 .about__content-text{
-  margin-top: 70px;
+  margin-top: 44px;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -1071,15 +1089,41 @@ font-size: 112.564px;
 .bg-cirle{
   position: absolute;
   z-index: 0;
-  width: 670px;
-  height:670px;
-  background: linear-gradient(180deg, #1EFFF2 0%, #AE009D 100%);
-  filter: blur(313px);
+  width: 1500px;
+  height:1500px;
+  
+
   margin-top: -300px;
+}
+
+@media (max-width: 1550px) {
+  .bg-cirle{
+    
+    width: 800px;
+    height: 800px;
+    
+  
+   
+  }
+}
+
+@media (max-width: 900px) {
+  .bg-cirle{
+    display: none;
+  }
+}
+
+.bg-cirle img{
+  width: 100%;
+  height:100%;
 }
 
 .z-for__circle{
   z-index: 1;
+}
+
+.z-for__circle_btn{
+  background: #C52FD4;
 }
 
 .choose__titlse{
