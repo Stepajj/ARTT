@@ -98,6 +98,10 @@ body{
     z-index: 10;
   }
 
+  .thousand__plus{
+    color: #fff;
+  }
+
   .footer{
    
     
@@ -1207,4 +1211,41 @@ font-size: 112.564px;
   font-size: 20px;
   line-height: 30px;
   color: #424242;
+}
+
+
+/*--------------------------------------------------TWO PHONES-----------------------------------------------*/ 
+
+.two__phones_block{
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  background: linear-gradient(180deg, #5F0DA7 0%, #1A0026 100%);
+}
+
+.two__phones_block img{
+  margin: 100px auto;
+}
+
+.token__test{
+  margin: 0;
+  background: linear-gradient(135.58deg, #9F0CFF 21.79%, #AD6DFF 128.17%);
+box-shadow: 0px 4px 250px rgba(41, 0, 40, 0.28);
+
+}
+
+.token__test div{
+  
+  font-weight: 600;
+  font-size: 37px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.white{
+  color: #ABABAB;
+}
+
+.get__started-test{
+  padding: 100px 0px;
+  background: linear-gradient(180deg, #5F0DA7 0%, #1A0026 100%);
 }
