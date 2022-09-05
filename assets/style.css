@@ -98,21 +98,44 @@ body{
     z-index: 10;
   }
 
+  .nav__logo{
+    margin: 0px 10px;
+  }
+
+  @media (max-width: 500px) {
+    .nav__logo{
+      margin: 2px 5px 0px 5px;
+    }
+    .nav__logo img{
+      width: 25px;
+    }
+  }
+
   .thousand__plus{
     color: #fff;
   }
 
   .footer{
    
-    
-    padding: 130px 20px 10px 20px;
+    border-top: 1px solid #FF7AFF;
+    padding: 50px 20px 10px 20px;
     color: #fff;
     background: #1E0028;
     
   }
 
+  .main__footer{
+    border: none;
+    padding-top: 200px;
+  }
+
   .nav__main__item{
     margin-top: -15px;
+    display: flex;
+  }
+  
+  .nav__nav-item :hover{
+    color: #FD79FD;
   }
 
  
@@ -179,7 +202,8 @@ body{
 }
 
 .getstarted__container{
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
+
 }
 
   /*-----------------------------------------------------------------*/
@@ -221,7 +245,9 @@ body{
     
   }
 
-  
+  .your-content-item__icon{
+    height: 290px;
+  }
 
   .version{
     color:  #1AFF82;    ;
@@ -231,7 +257,7 @@ body{
     margin-top: 20px;
     font-weight: 700;
     font-size: 99.0187px;
-    line-height: 123px;
+    line-height: 93px;
   }
 
 
@@ -270,6 +296,23 @@ body{
     border-radius: 10px;
   }
 
+  .buy-now__button-next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 285px;
+    height: 60px;
+    margin-top: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+ 
+   border: 3px solid #fff;
+    border-radius: 10px;
+  }
+
+  
   /*.buy-now__button a{
     width: 100%;
     height: 100%;
@@ -576,7 +619,7 @@ body{
 }
 
 .shape-icon img{
-  margin-top: -50px;
+  margin-top: 0px;
 }
 
 .share-title{
@@ -902,8 +945,8 @@ height: 615px;
 }
 
 .soc-link__icon img{
-  width: 88px;
-  height: 88px;
+  width: 71px;
+  height: 71px;
   margin-right: 0px;
 }
 
@@ -936,7 +979,15 @@ height: 615px;
 }
 
 .head_item a{
+
   color: #fff;
+}
+
+@media (max-width: 500px) {
+  .head_item a{
+  
+   font-size: 15px;
+  }
 }
 
 .nav-title{
@@ -951,6 +1002,18 @@ height: 615px;
   font-size: 15.587px;
   line-height: 23px;
   color: #707070;
+}
+@media (max-width: 500px) {
+  .nav-title{
+   
+    font-size: 15px;
+    line-height: 20px;
+   
+  }
+
+  .nav__gmail{
+    font-size: 10px;
+  }
 }
 
 .getstarted__icon img{
@@ -971,7 +1034,7 @@ height: 615px;
 }
 
 .about-us__block-aboutpage__container{
-  padding: 70px 0px 0px 0px;
+  padding: 70px 10px 0px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1039,12 +1102,22 @@ height: 615px;
   }
 
   .big_v{
+    margin-top: 25px;
     height: 50px;
     width: 50px;
   }
 }
 
+@media (max-width: 400px) {
+  .big_v{
+    margin-top: 5px;
+   
+  }
+}
+
+
 .cirle__mark{
+  color: #fff;
   margin: 44px 0px 0px 0px;
   display: flex;
   align-items: center;
@@ -1055,6 +1128,13 @@ height: 615px;
   font-size: 35px;
   background: linear-gradient(180deg, #C15DFF 0%, #B02EFF 100%);
   box-shadow: 0px 4px 46px rgba(0, 0, 0, 0.23);
+}
+
+.cirle__mark-two{
+  margin: 10px 0px;
+  width: 51px;
+  height: 51px;
+  background: #DA40C3;
 }
 
 
@@ -1148,6 +1228,24 @@ font-size: 112.564px;
   
 }
 
+.choose__subtitle img{
+  width: 100px;
+ 
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .choose__subtitle{
+  font-size: 40px;
+  line-height: 80px;
+  }
+
+  .choose__subtitle img{
+    width: 50px;
+    margin-top: 25px;
+  }
+}
+
 .choose__subtitle_two{
   font-weight: 500;
   font-size: 36.5986px;
@@ -1183,6 +1281,24 @@ font-size: 112.564px;
   line-height: 33px;
 }
 
+@media (max-width: 850px) {
+  .choose__items{
+    flex-direction: column;
+  }
+
+  .choose__item{
+    margin-top: 80px;
+  }
+
+  .choose__item-text{
+    font-size: 16px;
+  }
+
+  .choose__item-text{
+    font-size: 24px;
+  }
+}
+
 .token__block{
   margin: 100px 0px 0px 0px;
   width: 100%;
@@ -1204,6 +1320,8 @@ font-size: 112.564px;
 }
 
 .tocen__item{
+  display: flex;
+  max-width: 80%;
   margin: 23px 0px 0px 0px;
   padding: 16px 45px;
   background: #FFFFFF;
@@ -1213,16 +1331,24 @@ font-size: 112.564px;
   color: #424242;
 }
 
+@media (max-width: 570px) {
+  .tocen__item{
+    font-size: 13px;
+    padding: 16px 15px;
+  }
+}
+
 
 /*--------------------------------------------------TWO PHONES-----------------------------------------------*/ 
 
 .two__phones_block{
   padding: 20px 0px 20px 0px;
   display: flex;
-  background: linear-gradient(180deg, #5F0DA7 0%, #1A0026 100%);
+  background: linear-gradient(160.3deg, #A532CA -1.63%, #4D0B6F 32.8%, #3F0C63 50.56%, #450A62 76.8%, #560473 105.68%);
 }
 
 .two__phones_block img{
+  max-width: 100%;
   margin: 100px auto;
 }
 
@@ -1239,6 +1365,17 @@ box-shadow: 0px 4px 250px rgba(41, 0, 40, 0.28);
   font-size: 37px;
   line-height: 56px;
   text-align: center;
+}
+
+@media (max-width: 700px) {
+  .token__test div{
+    font-size: 25px;
+  }
+
+  .token__test{
+    height: 300px;
+    padding: 30px 0px;
+  }
 }
 
 .white{
